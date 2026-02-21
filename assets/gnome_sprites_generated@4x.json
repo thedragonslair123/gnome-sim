@@ -1,0 +1,19 @@
+{
+  "sheet": "assets/gnome_sheet@4x.png",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 768,
+      "h": 768
+    },
+    {
+      "x": 768,
+      "y": 0,
+      "w": 768,
+      "h": 768
+    }
+  ],
+  "frameRate": 6,
+  "dpr": 4
+}

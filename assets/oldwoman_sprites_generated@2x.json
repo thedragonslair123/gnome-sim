@@ -1,0 +1,19 @@
+{
+  "sheet": "assets/oldwoman_sheet@2x.png",
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 560
+    },
+    {
+      "x": 480,
+      "y": 0,
+      "w": 480,
+      "h": 560
+    }
+  ],
+  "frameRate": 3,
+  "dpr": 2
+}

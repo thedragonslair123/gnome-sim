@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gnome in the Garden</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="garden">
+    <div id="oldWoman" class="character" aria-label="Old woman">
+      <svg viewBox="0 0 120 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <!-- shawl -->
+        <path d="M10 60 C40 30,80 30,110 60 L100 120 L20 120 Z" fill="#f3d7c2" stroke="#b87b50"/>
+        <!-- head -->
+        <circle cx="60" cy="36" r="18" fill="#f1cfa6" stroke="#b87b50"/>
+        <!-- hair bun -->
+        <ellipse cx="60" cy="18" rx="12" ry="8" fill="#6b4a36"/>
+        <!-- eyes -->
+        <circle cx="53" cy="36" r="2" fill="#2b2b2b"/>
+        <circle cx="67" cy="36" r="2" fill="#2b2b2b"/>
+      </svg>
+    </div>
+    <div id="gnome" class="character" aria-label="Gnome" tabindex="0">
+      <svg viewBox="0 0 96 96" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <!-- hat -->
+        <path d="M8 40 Q48 0 88 40 Z" fill="#c0392b" stroke="#7a1f1b"/>
+        <!-- face -->
+        <circle cx="48" cy="54" r="14" fill="#ffd9b6" stroke="#b7724b"/>
+        <!-- beard -->
+        <path d="M34 62 Q48 86 62 62 Z" fill="#fff" stroke="#e6e6e6"/>
+        <!-- body -->
+        <rect x="28" y="66" width="40" height="22" rx="8" fill="#2e8b57"/>
+      </svg>
+    </div>
+    <div id="dialogue" aria-live="polite"></div>
+    <div id="hud">Use arrow keys or click to move. Click the old woman to talk.</div>
+
+    <div id="controlPanel" aria-hidden="false">
+      <label for="volume">Volume</label>
+      <input id="volume" type="range" min="0" max="100" value="80">
+      <label for="useImages"><input id="useImages" type="checkbox"> Use image sprites</label>
+      <label for="layoutPreset">Layout</label>
+      <select id="layoutPreset">
+        <option value="meadow">Meadow</option>
+        <option value="cottage">Cottage</option>
+        <option value="pond">Pond</option>
+      </select>
+      <label for="forceSheet"><input id="forceSheet" type="checkbox"> Force sheet mode</label>
+      <label for="dprOverride">DPR</label>
+      <select id="dprOverride">
+        <option value="auto">Auto</option>
+        <option value="1">1x</option>
+        <option value="2">2x</option>
+        <option value="3">3x</option>
+      </select>
+      <label for="easing">Easing</label>
+      <input id="easing" type="range" min="0" max="1" step="0.05" value="0.66">
+      <button id="exportPNG">Export PNG</button>
+      <button id="resetState">Reset saved state</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
